@@ -38,11 +38,14 @@ https://t.me/patterniha
 
 ۷. در برنامه v2rayNG بهتر است کانفیگها به صورت Subscription وارد شود تا در صورت آپدیت کانفیگ به صورت اتوماتیک برای شما هم اپدیت شود. موقع اضافه کردن remarks را اسم کانفیگ؛ URL را یکی از آدرس های زیر بسته به نوع تحریم شکن؛ و تیک automatic update را نیز بزنید:
 
-نسخه بدون تحریم‌شکن: https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless.jsonc
+نسخه بدون تحریم‌شکن: https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless.jsonc 
+
 
 نسخه تحریم‌شکن https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless-dynx.jsonc :dynx 
 
+
 نسخه تحریم‌شکن https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless-shecan.jsonc :shecan 
+
 
  
 
