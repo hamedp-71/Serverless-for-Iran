@@ -36,7 +36,14 @@ https://t.me/patterniha
 
 ۶. تفاوت نسخه های Serverless و Serverless-dynx و Serverless-shecan تنها در آدرس dns تحریم شکن میباشد؛ نسخه Serverless تحریم شکنی ندارد(برخی isp ها مانند شاتل خودشون تحریم شکن دارند و نیازی به تحریم شکن جدا نیست) و نسخه Serverless-dynx از تحریم شکن dynx؛ و نسخه Serverless-shecan  از تحریم شکن shecan استفاده میکند؛ شما میتوانید از آدرس هر dns تحریم شکن دیگری نیز استفاده کنید.
 
-۷. در برنامه v2rayNG بهتر است کانفیگها به صورت Subscription وارد شود تا در صورت آپدیت کانفیگ به صورت اتوماتیک برای شما هم اپدیت شود. موقع اضافه کردن remarks را اسم کانفیگ؛ URL را یکی از آدرس های زیر بسته به نوع تحریم شکن؛ و تیک automatic update را نیز بزنید.
+۷. در برنامه v2rayNG بهتر است کانفیگها به صورت Subscription وارد شود تا در صورت آپدیت کانفیگ به صورت اتوماتیک برای شما هم اپدیت شود. موقع اضافه کردن remarks را اسم کانفیگ؛ URL را یکی از آدرس های زیر بسته به نوع تحریم شکن؛ و تیک automatic update را نیز بزنید:
+
+نسخه بدون تحریم شکن: https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless.jsonc
+
+نسخه تحریم شکن https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless-dynx.jsonc :dynx 
+
+نسخه تحریم شکن https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless-shecan.jsonc :shecan 
+
  
 
 # حمایت
