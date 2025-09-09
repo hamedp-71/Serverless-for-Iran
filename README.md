@@ -41,6 +41,8 @@ https://t.me/patterniha
 نسخه بدون تحریم شکن: https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless.jsonc
 
 نسخه تحریم شکن https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless-dynx.jsonc :dynx 
+
+نسخه تحریم شکن https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless-shecan.jsonc :shecan 
  
 
 # حمایت
