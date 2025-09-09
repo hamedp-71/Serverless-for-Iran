@@ -53,6 +53,10 @@ https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless
 https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless-shecan.jsonc
  
 
+# نسخه MitM + DomainFronting
+
+بزودی...
+
 # حمایت
 
 USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o
