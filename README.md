@@ -52,6 +52,7 @@ https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless
 
 https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless-shecan.jsonc
  
+۸. در اندروید برای استفاده از dns ضد تحریم و دور زدن تحریم باید Private DNS در تنظیمات اندروید و Use secure DNS در تنظیمات کروم خاموش باشد.
 
 # نسخه MitM + DomainFronting
 
