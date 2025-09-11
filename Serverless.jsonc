@@ -5,7 +5,7 @@
 
 
 {
-  "remarks": "Serverless-v5",
+  "remarks": "Serverless-v6",
 
   "version": {
     "min": "25.9.5"
@@ -138,7 +138,7 @@
         "fragment": {
           "packets": "1-1",
           "length": "130",
-          "interval": "260",
+          "interval": "190",
           "maxSplit": "4"
         }
       },
@@ -155,7 +155,7 @@
         "fragment": {
           "packets": "2-4",
           "length": "1",
-          "interval": "2",
+          "interval": "1",
           "maxSplit": "130"
         }
       },
@@ -178,7 +178,7 @@
         "fragment": {
           "packets": "1-1",
           "length": "1",
-          "interval": "2",
+          "interval": "1",
           "maxSplit": "517"
         }
       },
@@ -251,34 +251,38 @@
        "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::"]
       },
       {"outboundTag": "direct-out",
-       "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"]
+       "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "direct-out",
        "ip": ["geoip:private", "geoip:ir"]
       },
       {"outboundTag": "udp-noises",
-        "network": "udp", "protocol": ["quic"]
+        "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "udp-noises",
-       "network": "udp", "port": "443,2053,2083,2087,2096,8443"
+       "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "direct-out",
-       "network": "udp"
+       "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment", // or "skip-fragment"
-       "network": "tcp", "protocol": ["tls"]
+       "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment", // or "skip-fragment"
-        "network": "tcp", "port": "443,2053,2083,2087,2096,8443"
+        "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment",
-        "network": "tcp", "protocol": ["http"]
+        "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment",
-        "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095"
+        "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment",
-        "network": "tcp"
+        "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
+      },
+      {
+        "outboundTag": "block-out",
+        "network": "tcp,udp"
       }
     ]
   }
