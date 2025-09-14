@@ -5,7 +5,7 @@
 
 
 {
-  "remarks": "Serverless-v8",
+  "remarks": "Serverless-v9",
 
   "version": {
     "min": "25.9.5"
@@ -240,34 +240,34 @@
        "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::"]
       },
       {"outboundTag": "direct-out",
-       "domain": ["domain:ir", "geosite:private", "geosite:ir"], "ip": ["0.0.0.0/0", "::/0"]
+       "domain": ["domain:ir", "geosite:private", "geosite:ir"]
       },
       {"outboundTag": "direct-out",
        "ip": ["geoip:private", "geoip:ir"]
       },
       {"outboundTag": "udp-noises",
-        "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
+        "network": "udp", "protocol": ["quic"]
       },
       {"outboundTag": "udp-noises",
-       "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+       "network": "udp", "port": "443,2053,2083,2087,2096,8443"
       },
       {"outboundTag": "direct-out",
-       "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
+       "network": "udp"
       },
       {"outboundTag": "full-fragment", // or "skip-fragment"
-       "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
+       "network": "tcp", "protocol": ["tls"]
       },
       {"outboundTag": "full-fragment", // or "skip-fragment"
-        "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+        "network": "tcp", "port": "443,2053,2083,2087,2096,8443"
       },
       {"outboundTag": "full-fragment",
-        "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
+        "network": "tcp", "protocol": ["http"]
       },
       {"outboundTag": "full-fragment",
-        "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
+        "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095"
       },
       {"outboundTag": "full-fragment",
-        "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
+        "network": "tcp"
       },
       {
         "outboundTag": "block-out",
