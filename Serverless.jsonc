@@ -5,7 +5,7 @@
 
 
 {
-  "remarks": "Serverless-v7",
+  "remarks": "Serverless-v8",
 
   "version": {
     "min": "25.9.5"
@@ -33,19 +33,18 @@
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit"],
+        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com"],
         "finalQuery": true
       },
       {
         "tag": "no-filter-dns",
         "address": "https://cloudflare-dns.com/dns-query",
-        "domains": ["geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit"],
         "timeoutMs": 5000,
         "finalQuery": true
       },
       {
         "address": "localhost",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com", "domain:dynx.pro"],
+        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com"],
         "finalQuery": true
       }
     ],
@@ -241,7 +240,7 @@
        "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::"]
       },
       {"outboundTag": "direct-out",
-       "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
+       "domain": ["domain:ir", "geosite:private", "geosite:ir"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "direct-out",
        "ip": ["geoip:private", "geoip:ir"]

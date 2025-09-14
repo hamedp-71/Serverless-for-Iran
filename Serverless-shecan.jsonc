@@ -5,7 +5,7 @@
 
 
 {
-  "remarks": "Serverless-shecan-v7",
+  "remarks": "Serverless-shecan-v8",
 
   "version": {
     "min": "25.9.5"
@@ -33,13 +33,13 @@
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit"],
+        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit", "geosite:twitch"],
         "finalQuery": true
       },
       {
         "tag": "no-filter-dns",
         "address": "https://cloudflare-dns.com/dns-query",
-        "domains": ["geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit"],
+        "domains": ["geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit", "geosite:twitch"],
         "timeoutMs": 5000,
         "finalQuery": true
       },
