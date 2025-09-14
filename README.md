@@ -40,12 +40,12 @@ https://t.me/patterniha
 
 
 
-آدرس Subscription تمامی نسخه ها:
+**آدرس Subscription تمامی نسخه ها:
 
 
 https://raw.githubusercontent.com/patterniha/Serverless-for-Iran/refs/heads/main/Subscription/Serverless-for-Iran.json
 
- 
+ **
 ۸. در اندروید برای استفاده از dns ضد تحریم و دور زدن تحریم باید Private DNS در تنظیمات اندروید و Use secure DNS در تنظیمات کروم خاموش باشد.
 
 # نسخه MitM + DomainFronting
