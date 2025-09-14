@@ -42,6 +42,10 @@ https://t.me/patterniha
 
 https://github.com/patterniha/Serverless-for-Iran/raw/refs/heads/main/Serverless.jsonc
 
+نسخه تحریم شکن local:
+
+https://github.com/patterniha/Serverless-for-Iran/blob/main/Serverless-local.jsonc
+
 
 نسخه تحریم شکن dynx:
 
