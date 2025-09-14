@@ -1,7 +1,14 @@
 
 [
   {
-    "remarks": "Serverless-v10",
+    "__Credits__": {
+      "repository": "https://github.com/patterniha/Serverless-for-Iran",
+      "telegram": "https://t.me/projectXhttp",
+      "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
+    },
+
+
+    "remarks": "Serverless-v11",
 
     "version": {
       "min": "25.9.5"
@@ -274,7 +281,14 @@
   },
 
   {
-    "remarks": "Serverless-local-v10",
+    "__Credits__": {
+      "repository": "https://github.com/patterniha/Serverless-for-Iran",
+      "telegram": "https://t.me/projectXhttp",
+      "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
+    },
+
+
+    "remarks": "Serverless-local-v11",
 
     "version": {
       "min": "25.9.5"
@@ -559,7 +573,14 @@
   },
 
   {
-    "remarks": "Serverless-dynx-v10",
+    "__Credits__": {
+      "repository": "https://github.com/patterniha/Serverless-for-Iran",
+      "telegram": "https://t.me/projectXhttp",
+      "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
+    },
+
+
+    "remarks": "Serverless-dynx-v11",
 
     "version": {
       "min": "25.9.5"
@@ -844,7 +865,14 @@
   },
 
   {
-    "remarks": "Serverless-shecan-v10",
+    "__Credits__": {
+      "repository": "https://github.com/patterniha/Serverless-for-Iran",
+      "telegram": "https://t.me/projectXhttp",
+      "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
+    },
+
+
+    "remarks": "Serverless-shecan-v11",
 
     "version": {
       "min": "25.9.5"
