@@ -5,7 +5,7 @@
 
 
 {
-  "remarks": "Serverless-dynx-v9",
+  "remarks": "Serverless-dynx-v10",
 
   "version": {
     "min": "25.9.5"
@@ -33,13 +33,13 @@
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit", "geosite:twitch"],
+        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
         "finalQuery": true
       },
       {
         "tag": "no-filter-dns",
         "address": "https://cloudflare-dns.com/dns-query",
-        "domains": ["geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit", "geosite:twitch"],
+        "domains": ["geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:x", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
         "timeoutMs": 5000,
         "finalQuery": true
       },
