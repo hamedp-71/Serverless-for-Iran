@@ -38,11 +38,9 @@ https://t.me/patterniha
 
 ۷. در اپ v2rayNG بهتر است کانفیگها به صورت Subscription وارد شود تا در صورت آپدیت کانفیگها به صورت اتوماتیک برای شما هم اپدیت شود. موقع اضافه کردن: remarks را اسمی دلخواه قرار دهید؛ URL را آدرس Subscription قرار دهید؛ تیک automatic update را فعال کنید؛ و در آخر آپدیت را بزنید(همچنین برای آپدیت اتوماتیک باید آن را در تنظیمات نیز فعال کنید)
 
-آدرس Subscription تمامی نسخه ها با کامنت (پیشنهادی):
 
-https://raw.githubusercontent.com/patterniha/Serverless-for-Iran/refs/heads/main/Subscription/Serverless-for-Iran.jsonc
 
-آدرس Subscription تمامی نسخه ها بدون کامنت (غیر پیشنهادی - مخصوص کلاینتهای قدیمی):
+آدرس Subscription تمامی نسخه ها:
 
 
 https://raw.githubusercontent.com/patterniha/Serverless-for-Iran/refs/heads/main/Subscription/Serverless-for-Iran.json
