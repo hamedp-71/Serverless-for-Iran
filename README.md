@@ -36,8 +36,10 @@ https://t.me/patterniha
 
 ۶. تفاوت نسخه های Serverless و Serverless-local و Serverless-dynx و Serverless-shecan تنها در آدرس dns تحریم شکن میباشد؛ نسخه Serverless تحریم شکنی ندارد؛ نسخه Serverless-local از dns لوکال(پیشفرض سیستم) به عنوان تحریم شکن استفاده میکند(برخی isp ها مانند شاتل خودشون تحریم شکن دارند و نیازی به تحریم شکن جدا نیست) و نسخه Serverless-dynx از تحریم شکن dynx؛ و نسخه Serverless-shecan  از تحریم شکن shecan استفاده میکند؛ شما میتوانید از آدرس هر dns تحریم شکن دیگری نیز استفاده کنید.
 
-۷. در اپ v2rayNG بهتر است کانفیگها به صورت Subscription وارد شود تا در صورت آپدیت کانفیگها به صورت اتوماتیک برای شما هم اپدیت شود. موقع اضافه کردن: remarks را اسمی دلخواه قرار دهید؛ URL را آدرس Subscription قرار دهید؛ تیک automatic update را فعال کنید؛ و در آخر آپدیت را بزنید(همچنین برای آپدیت اتوماتیک باید آن را در تنظیمات برنامه نیز فعال کنید)
+۷. در اندروید برای استفاده از dns ضد تحریم و دور زدن تحریم باید Private DNS در تنظیمات اندروید و Use secure DNS در تنظیمات کروم خاموش باشد.
 
+
+۸. در اپ v2rayNG بهتر است کانفیگها به صورت Subscription وارد شود تا در صورت آپدیت کانفیگها به صورت اتوماتیک برای شما هم اپدیت شود. موقع اضافه کردن: remarks را اسمی دلخواه قرار دهید؛ URL را آدرس Subscription قرار دهید؛ تیک automatic update را فعال کنید؛ و در آخر آپدیت را بزنید(همچنین برای آپدیت اتوماتیک باید آن را در تنظیمات برنامه نیز فعال کنید)
 
 
 **آدرس Subscription تمامی نسخه ها:**
@@ -45,8 +47,6 @@ https://t.me/patterniha
 
 **https://raw.githubusercontent.com/patterniha/Serverless-for-Iran/refs/heads/main/Subscription/Serverless-for-Iran.json**
 
-
-۸. در اندروید برای استفاده از dns ضد تحریم و دور زدن تحریم باید Private DNS در تنظیمات اندروید و Use secure DNS در تنظیمات کروم خاموش باشد.
 
 # نسخه MitM + DomainFronting
 
