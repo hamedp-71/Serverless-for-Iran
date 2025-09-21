@@ -8,7 +8,7 @@
     },
 
 
-    "remarks": "Serverless-v12",
+    "remarks": "Serverless-v13",
 
     "version": {
       "min": "25.9.5"
@@ -230,6 +230,9 @@
         {"outboundTag": "block-out",
           "domain": ["geosite:category-ads-all"]
         },
+        {"outboundTag": "block-out",
+          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+        },
         {"outboundTag": "dns-out",
           "inboundTag": ["dns-in"]
         },
@@ -238,9 +241,6 @@
         },
         {"outboundTag": "full-fragment",
           "inboundTag": ["no-filter-dns"]
-        },
-        {"outboundTag": "block-out",
-          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::"]
         },
         {"outboundTag": "direct-out",
           "domain": ["domain:ir", "geosite:private", "geosite:ir"]
@@ -288,7 +288,7 @@
     },
 
 
-    "remarks": "Serverless-local-v12",
+    "remarks": "Serverless-local-v13",
 
     "version": {
       "min": "25.9.5"
@@ -519,6 +519,9 @@
         {"outboundTag": "block-out",
           "domain": ["geosite:category-ads-all"]
         },
+        {"outboundTag": "block-out",
+          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+        },
         {"outboundTag": "dns-out",
           "inboundTag": ["dns-in"]
         },
@@ -530,9 +533,6 @@
         },
         {"outboundTag": "full-fragment",
           "inboundTag": ["no-filter-dns"]
-        },
-        {"outboundTag": "block-out",
-          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::"]
         },
         {"outboundTag": "direct-out",
           "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"]
@@ -580,7 +580,7 @@
     },
 
 
-    "remarks": "Serverless-dynx-v12",
+    "remarks": "Serverless-dynx-v13",
 
     "version": {
       "min": "25.9.5"
@@ -811,6 +811,9 @@
         {"outboundTag": "block-out",
           "domain": ["geosite:category-ads-all"]
         },
+        {"outboundTag": "block-out",
+          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+        },
         {"outboundTag": "dns-out",
           "inboundTag": ["dns-in"]
         },
@@ -822,9 +825,6 @@
         },
         {"outboundTag": "full-fragment",
           "inboundTag": ["no-filter-dns"]
-        },
-        {"outboundTag": "block-out",
-          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::"]
         },
         {"outboundTag": "direct-out",
           "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"]
@@ -872,7 +872,7 @@
     },
 
 
-    "remarks": "Serverless-shecan-v12",
+    "remarks": "Serverless-shecan-v13",
 
     "version": {
       "min": "25.9.5"
@@ -1103,6 +1103,9 @@
         {"outboundTag": "block-out",
           "domain": ["geosite:category-ads-all"]
         },
+        {"outboundTag": "block-out",
+          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+        },
         {"outboundTag": "dns-out",
           "inboundTag": ["dns-in"]
         },
@@ -1114,9 +1117,6 @@
         },
         {"outboundTag": "full-fragment",
           "inboundTag": ["no-filter-dns"]
-        },
-        {"outboundTag": "block-out",
-          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::"]
         },
         {"outboundTag": "direct-out",
           "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"]
