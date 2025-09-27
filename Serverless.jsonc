@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-v15",
+  "remarks": "Serverless-v16",
 
   "version": {
     "min": "25.9.5"
@@ -40,7 +40,7 @@
       {
         "tag": "no-filter-dns",
         "address": "https://cloudflare-dns.com/dns-query",
-        "timeoutMs": 5000,
+        "timeoutMs": 10000,
         "finalQuery": true
       },
       {
