@@ -8,7 +8,7 @@
     },
 
 
-    "remarks": "Serverless-v14",
+    "remarks": "Serverless-v15",
 
     "version": {
       "min": "25.9.5"
@@ -127,7 +127,7 @@
           "fragment": {
             "packets": "1-1",
             "length": "130",
-            "interval": "190",
+            "interval": "560",
             "maxSplit": "4"
           }
         },
@@ -144,7 +144,7 @@
           "fragment": {
             "packets": "2-4",
             "length": "1",
-            "interval": "1",
+            "interval": "4",
             "maxSplit": "130"
           }
         },
@@ -167,7 +167,7 @@
           "fragment": {
             "packets": "1-1",
             "length": "1",
-            "interval": "1",
+            "interval": "4",
             "maxSplit": "517"
           }
         },
@@ -282,7 +282,7 @@
     },
 
 
-    "remarks": "Serverless-local-v14",
+    "remarks": "Serverless-local-v15",
 
     "version": {
       "min": "25.9.5"
@@ -410,7 +410,7 @@
           "fragment": {
             "packets": "1-1",
             "length": "130",
-            "interval": "190",
+            "interval": "560",
             "maxSplit": "4"
           }
         },
@@ -427,7 +427,7 @@
           "fragment": {
             "packets": "2-4",
             "length": "1",
-            "interval": "1",
+            "interval": "4",
             "maxSplit": "130"
           }
         },
@@ -450,7 +450,7 @@
           "fragment": {
             "packets": "1-1",
             "length": "1",
-            "interval": "1",
+            "interval": "4",
             "maxSplit": "517"
           }
         },
@@ -568,7 +568,7 @@
     },
 
 
-    "remarks": "Serverless-dynx-v14",
+    "remarks": "Serverless-dynx-v15",
 
     "version": {
       "min": "25.9.5"
@@ -696,7 +696,7 @@
           "fragment": {
             "packets": "1-1",
             "length": "130",
-            "interval": "190",
+            "interval": "560",
             "maxSplit": "4"
           }
         },
@@ -713,7 +713,7 @@
           "fragment": {
             "packets": "2-4",
             "length": "1",
-            "interval": "1",
+            "interval": "4",
             "maxSplit": "130"
           }
         },
@@ -736,7 +736,7 @@
           "fragment": {
             "packets": "1-1",
             "length": "1",
-            "interval": "1",
+            "interval": "4",
             "maxSplit": "517"
           }
         },
@@ -854,7 +854,7 @@
     },
 
 
-    "remarks": "Serverless-shecan-v14",
+    "remarks": "Serverless-shecan-v15",
 
     "version": {
       "min": "25.9.5"
@@ -982,7 +982,7 @@
           "fragment": {
             "packets": "1-1",
             "length": "130",
-            "interval": "190",
+            "interval": "560",
             "maxSplit": "4"
           }
         },
@@ -999,7 +999,7 @@
           "fragment": {
             "packets": "2-4",
             "length": "1",
-            "interval": "1",
+            "interval": "4",
             "maxSplit": "130"
           }
         },
@@ -1022,7 +1022,7 @@
           "fragment": {
             "packets": "1-1",
             "length": "1",
-            "interval": "1",
+            "interval": "4",
             "maxSplit": "517"
           }
         },
