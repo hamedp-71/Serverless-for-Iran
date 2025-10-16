@@ -7,10 +7,10 @@
   },
 
 
-  "remarks": "Serverless-shecan-v16",
+  "remarks": "Serverless-shecan-v17",
 
   "version": {
-    "min": "25.9.5"
+    "min": "25.10.15"
   },
 
   "log": {
@@ -29,12 +29,12 @@
   "dns":{
     "hosts": {
       "geosite:category-ads-all": "#3",
-      "cloudflare-dns.com": "www.cloudflare.com"
+      "cloudflare-dns.com": "challenges.cloudflare.com"
     },
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
+        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
         "finalQuery": true
       },
       {
@@ -46,7 +46,7 @@
       },
       {
         "address": "localhost",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:www.cloudflare.com", "domain:dynx.pro"],
+        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "domain:dynx.pro"],
         "finalQuery": true
       },
       {
@@ -229,11 +229,12 @@
   "routing": {
     "domainStrategy": "IPOnDemand",
     "rules": [
-      {"outboundTag": "block-out",
-        "domain": ["geosite:category-ads-all"]
+      {
+        "outboundTag": "block-out",
+        "port": 0
       },
       {"outboundTag": "block-out",
-        "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+        "domain": ["geosite:category-ads-all"]
       },
       {"outboundTag": "dns-out",
        "inboundTag": ["dns-in"]
@@ -247,39 +248,42 @@
       {"outboundTag": "full-fragment", // or "skip-fragment"
         "inboundTag": ["no-filter-dns"]
       },
+      {"outboundTag": "block-out",
+        "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+      },
       {"outboundTag": "direct-out",
-       "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"]
+       "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "direct-out",
        "ip": ["geoip:private", "geoip:ir"]
       },
       {"outboundTag": "udp-noises",
-        "network": "udp", "protocol": ["quic"]
+        "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "udp-noises",
-       "network": "udp", "port": "443,2053,2083,2087,2096,8443"
+       "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "direct-out",
-       "network": "udp"
+       "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment", // or "skip-fragment"
-       "network": "tcp", "protocol": ["tls"]
+       "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment", // or "skip-fragment"
-        "network": "tcp", "port": "443,2053,2083,2087,2096,8443"
+        "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment",
-        "network": "tcp", "protocol": ["http"]
+        "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment",
-        "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095"
+        "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment",
-        "network": "tcp"
+        "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
       },
       {
         "outboundTag": "block-out",
-        "network": "tcp,udp"
+        "port": "0-65535"
       }
     ]
   }
