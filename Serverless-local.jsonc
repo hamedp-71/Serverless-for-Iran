@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-local-v17",
+  "remarks": "Serverless-local-v18",
 
   "version": {
     "min": "25.10.15"
@@ -34,8 +34,7 @@
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
-        "finalQuery": true
+        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
       },
       {
         "tag": "no-filter-dns",

@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-v17",
+  "remarks": "Serverless-v18",
 
   "version": {
     "min": "25.10.15"
@@ -34,8 +34,7 @@
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com"],
-        "finalQuery": true
+        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com"]
       },
       {
         "tag": "no-filter-dns",
