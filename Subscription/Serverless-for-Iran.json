@@ -8,7 +8,7 @@
     },
 
 
-    "remarks": "Serverless-v19",
+    "remarks": "Serverless-v20",
 
     "version": {
       "min": "25.10.15"
@@ -300,7 +300,7 @@
     },
 
 
-    "remarks": "Serverless-local-v19",
+    "remarks": "Serverless-local-v20",
 
     "version": {
       "min": "25.10.15"
@@ -327,7 +327,14 @@
       "servers": [
         {
           "address": "fakedns",
-          "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
+          "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
+        },
+		{
+          "tag": "anti-sanction-dns",
+          "address": "localhost",
+          "unexpectedIPs": ["geoip:irgfw-all-injected-ips", "0.0.0.0", "::", "127.0.0.1", "::1"],
+          "timeoutMs": 2500,
+          "finalQuery": false
         },
         {
           "tag": "no-filter-dns",
@@ -338,16 +345,8 @@
         },
         {
           "address": "localhost",
-          "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "domain:dynx.pro"],
+          "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com"],
           "finalQuery": true
-        },
-        {
-          "tag": "anti-sanction-dns",
-          "address": "localhost",
-          "domains": ["geosite:sanctioned"],
-          "unexpectedIPs": ["geoip:irgfw-all-injected-ips", "0.0.0.0", "::", "127.0.0.1", "::1"],
-          "timeoutMs": 2000,
-          "finalQuery": false
         }
       ],
       "queryStrategy": "UseSystem",
@@ -560,7 +559,7 @@
          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
         },
         {"outboundTag": "direct-out",
-         "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
+         "domain": ["domain:ir", "geosite:private", "geosite:ir"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
          "ip": ["geoip:private", "geoip:ir"]
@@ -604,7 +603,7 @@
     },
 
 
-    "remarks": "Serverless-dynx-v19",
+    "remarks": "Serverless-dynx-v20",
 
     "version": {
       "min": "25.10.15"
@@ -650,7 +649,7 @@
           "address": "https://anti-ban.dynx.pro/dns-query",
           "domains": ["geosite:sanctioned"],
           "unexpectedIPs": ["geoip:irgfw-all-injected-ips", "0.0.0.0", "::", "127.0.0.1", "::1"],
-          "timeoutMs": 2000,
+          "timeoutMs": 2500,
           "finalQuery": false
         }
       ],

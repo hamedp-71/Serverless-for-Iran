@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-dynx-v19",
+  "remarks": "Serverless-dynx-v20",
 
   "version": {
     "min": "25.10.15"
@@ -53,7 +53,7 @@
         "address": "https://anti-ban.dynx.pro/dns-query",  // or any anti-sanction DNS
         "domains": ["geosite:sanctioned"], // if this list is incomplete, put anti-sanction DNS in second place(after fakedns)
         "unexpectedIPs": ["geoip:irgfw-all-injected-ips", "0.0.0.0", "::", "127.0.0.1", "::1"],
-        "timeoutMs": 2000,
+        "timeoutMs": 2500,
         "finalQuery": false
       }
     ],
