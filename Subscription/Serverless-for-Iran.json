@@ -8,7 +8,7 @@
     },
 
 
-    "remarks": "Serverless-v20",
+    "remarks": "Serverless-v21",
 
     "version": {
       "min": "25.10.15"
@@ -300,7 +300,7 @@
     },
 
 
-    "remarks": "Serverless-local-v20",
+    "remarks": "Serverless-local-v21",
 
     "version": {
       "min": "25.10.15"
@@ -327,7 +327,7 @@
       "servers": [
         {
           "address": "fakedns",
-          "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
+          "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
         },
 		{
           "tag": "anti-sanction-dns",
@@ -339,7 +339,7 @@
         {
           "tag": "no-filter-dns",
           "address": "https://cloudflare-dns.com/dns-query",
-          "domains": ["geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
+          "domains": ["geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
           "timeoutMs": 10000,
           "finalQuery": true
         },
@@ -603,7 +603,7 @@
     },
 
 
-    "remarks": "Serverless-dynx-v20",
+    "remarks": "Serverless-dynx-v21",
 
     "version": {
       "min": "25.10.15"
@@ -630,12 +630,12 @@
       "servers": [
         {
           "address": "fakedns",
-          "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
+          "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "domain:dynx.pro", "geosite:sanctioned", "geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
         },
         {
           "tag": "no-filter-dns",
           "address": "https://cloudflare-dns.com/dns-query",
-          "domains": ["geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
+          "domains": ["geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
           "timeoutMs": 10000,
           "finalQuery": true
         },

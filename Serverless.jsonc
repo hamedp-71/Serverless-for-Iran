@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-v20",
+  "remarks": "Serverless-v21",
 
   "version": {
     "min": "25.10.15"
@@ -131,7 +131,7 @@
       },
       "streamSettings": {
         "sockopt": {
-          "dialerProxy": "full-fragment"
+          "dialerProxy": "full-fragment" // or "skip-fragment" (with different parameteres)
         }
       }
     },
@@ -248,7 +248,7 @@
       {"outboundTag": "dns-out",
        "inboundTag": ["socks-in"], "port": 53
       },
-      {"outboundTag": "full-fragment", // or "skip-fragment"
+      {"outboundTag": "full-fragment", // or "skip-fragment" or "tls-fragment"
        "inboundTag": ["no-filter-dns"]
       },
       {"outboundTag": "block-out",
@@ -269,10 +269,10 @@
       {"outboundTag": "direct-out",
        "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
       },
-      {"outboundTag": "full-fragment", // or "skip-fragment"
+      {"outboundTag": "full-fragment", // or "skip-fragment" or "tls-fragment"
        "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
       },
-      {"outboundTag": "full-fragment", // or "skip-fragment"
+      {"outboundTag": "full-fragment", // or "skip-fragment" or "tls-fragment"
        "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment",

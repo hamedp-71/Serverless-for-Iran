@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-local-v20",
+  "remarks": "Serverless-local-v21",
 
   "version": {
     "min": "25.10.15"
@@ -34,11 +34,11 @@
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
+        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
       },
 	  {
         "tag": "anti-sanction-dns",
-        "address": "localhost",  // or any anti-sanction DNS
+        "address": "localhost",
         "unexpectedIPs": ["geoip:irgfw-all-injected-ips", "0.0.0.0", "::", "127.0.0.1", "::1"],
         "timeoutMs": 2500,
         "finalQuery": false
@@ -46,7 +46,7 @@
       {
         "tag": "no-filter-dns",
         "address": "https://cloudflare-dns.com/dns-query",
-        "domains": ["geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
+        "domains": ["geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
         "timeoutMs": 10000,
         "finalQuery": true
       },
@@ -139,7 +139,7 @@
       },
       "streamSettings": {
         "sockopt": {
-          "dialerProxy": "full-fragment"
+          "dialerProxy": "full-fragment" // or "skip-fragment" (with different parameteres)
         }
       }
     },
@@ -259,7 +259,7 @@
       {"outboundTag": "direct-out",
        "inboundTag": ["anti-sanction-dns"]
       },
-      {"outboundTag": "full-fragment", // or "skip-fragment"
+      {"outboundTag": "full-fragment", // or "skip-fragment" or "tls-fragment"
        "inboundTag": ["no-filter-dns"]
       },
       {"outboundTag": "block-out",
@@ -280,10 +280,10 @@
       {"outboundTag": "direct-out",
        "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
       },
-      {"outboundTag": "full-fragment", // or "skip-fragment"
+      {"outboundTag": "full-fragment", // or "skip-fragment" or "tls-fragment"
        "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
       },
-      {"outboundTag": "full-fragment", // or "skip-fragment"
+      {"outboundTag": "full-fragment", // or "skip-fragment" or "tls-fragment"
        "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment",
