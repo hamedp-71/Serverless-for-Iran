@@ -220,58 +220,56 @@
     "routing": {
       "domainStrategy": "IPOnDemand",
       "rules": [
-        {
-          "outboundTag": "block-out",
-          "port": 0
+        {"outboundTag": "block-out",
+         "port": 0
         },
         {"outboundTag": "block-out",
-          "domain": ["geosite:category-ads-all"]
+         "domain": ["geosite:category-ads-all"]
         },
         {"outboundTag": "dns-out",
-          "inboundTag": ["dns-in"]
+         "inboundTag": ["dns-in"]
         },
         {"outboundTag": "dns-out",
-          "inboundTag": ["socks-in"], "port": 53
+         "inboundTag": ["socks-in"], "port": 53
         },
         {"outboundTag": "full-fragment",
-          "inboundTag": ["no-filter-dns"]
+         "inboundTag": ["no-filter-dns"]
         },
         {"outboundTag": "block-out",
-          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+         "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
         },
         {"outboundTag": "direct-out",
-          "domain": ["domain:ir", "geosite:private", "geosite:ir"], "ip": ["0.0.0.0/0", "::/0"]
+         "domain": ["domain:ir", "geosite:private", "geosite:ir"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
-          "ip": ["geoip:private", "geoip:ir"]
+         "ip": ["geoip:private", "geoip:ir"]
         },
         {"outboundTag": "udp-noises",
-          "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "udp-noises",
-          "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
-          "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
         },
-        {
-          "outboundTag": "block-out",
-          "port": "0-65535"
+        {"outboundTag": "block-out",
+         "port": "0-65535"
         }
       ]
     }
@@ -506,61 +504,59 @@
     "routing": {
       "domainStrategy": "IPOnDemand",
       "rules": [
-        {
-          "outboundTag": "block-out",
-          "port": 0
+        {"outboundTag": "block-out",
+         "port": 0
         },
         {"outboundTag": "block-out",
-          "domain": ["geosite:category-ads-all"]
+         "domain": ["geosite:category-ads-all"]
         },
         {"outboundTag": "dns-out",
-          "inboundTag": ["dns-in"]
+         "inboundTag": ["dns-in"]
         },
         {"outboundTag": "dns-out",
-          "inboundTag": ["socks-in"], "port": 53
+         "inboundTag": ["socks-in"], "port": 53
         },
         {"outboundTag": "direct-out",
-          "inboundTag": ["anti-sanction-dns"]
+         "inboundTag": ["anti-sanction-dns"]
         },
         {"outboundTag": "full-fragment",
-          "inboundTag": ["no-filter-dns"]
+         "inboundTag": ["no-filter-dns"]
         },
         {"outboundTag": "block-out",
-          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+         "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
         },
         {"outboundTag": "direct-out",
-          "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
+         "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
-          "ip": ["geoip:private", "geoip:ir"]
+         "ip": ["geoip:private", "geoip:ir"]
         },
         {"outboundTag": "udp-noises",
-          "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "udp-noises",
-          "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
-          "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
         },
-        {
-          "outboundTag": "block-out",
-          "port": "0-65535"
+        {"outboundTag": "block-out",
+         "port": "0-65535"
         }
       ]
     }
@@ -795,61 +791,59 @@
     "routing": {
       "domainStrategy": "IPOnDemand",
       "rules": [
-        {
-          "outboundTag": "block-out",
-          "port": 0
+        {"outboundTag": "block-out",
+         "port": 0
         },
         {"outboundTag": "block-out",
-          "domain": ["geosite:category-ads-all"]
+         "domain": ["geosite:category-ads-all"]
         },
         {"outboundTag": "dns-out",
-          "inboundTag": ["dns-in"]
+         "inboundTag": ["dns-in"]
         },
         {"outboundTag": "dns-out",
-          "inboundTag": ["socks-in"], "port": 53
+         "inboundTag": ["socks-in"], "port": 53
         },
         {"outboundTag": "direct-out",
-          "inboundTag": ["anti-sanction-dns"]
+         "inboundTag": ["anti-sanction-dns"]
         },
         {"outboundTag": "full-fragment",
-          "inboundTag": ["no-filter-dns"]
+         "inboundTag": ["no-filter-dns"]
         },
         {"outboundTag": "block-out",
-          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+         "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
         },
         {"outboundTag": "direct-out",
-          "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
+         "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
-          "ip": ["geoip:private", "geoip:ir"]
+         "ip": ["geoip:private", "geoip:ir"]
         },
         {"outboundTag": "udp-noises",
-          "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "udp-noises",
-          "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
-          "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
         },
-        {
-          "outboundTag": "block-out",
-          "port": "0-65535"
+        {"outboundTag": "block-out",
+         "port": "0-65535"
         }
       ]
     }
@@ -1084,61 +1078,59 @@
     "routing": {
       "domainStrategy": "IPOnDemand",
       "rules": [
-        {
-          "outboundTag": "block-out",
-          "port": 0
+        {"outboundTag": "block-out",
+         "port": 0
         },
         {"outboundTag": "block-out",
-          "domain": ["geosite:category-ads-all"]
+         "domain": ["geosite:category-ads-all"]
         },
         {"outboundTag": "dns-out",
-          "inboundTag": ["dns-in"]
+         "inboundTag": ["dns-in"]
         },
         {"outboundTag": "dns-out",
-          "inboundTag": ["socks-in"], "port": 53
+         "inboundTag": ["socks-in"], "port": 53
         },
         {"outboundTag": "direct-out",
-          "inboundTag": ["anti-sanction-dns"]
+         "inboundTag": ["anti-sanction-dns"]
         },
         {"outboundTag": "full-fragment",
-          "inboundTag": ["no-filter-dns"]
+         "inboundTag": ["no-filter-dns"]
         },
         {"outboundTag": "block-out",
-          "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+         "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
         },
         {"outboundTag": "direct-out",
-          "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
+         "domain": ["domain:ir", "geosite:private", "geosite:ir", "domain:dynx.pro"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
-          "ip": ["geoip:private", "geoip:ir"]
+         "ip": ["geoip:private", "geoip:ir"]
         },
         {"outboundTag": "udp-noises",
-          "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "udp-noises",
-          "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
-          "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-          "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
         },
-        {
-          "outboundTag": "block-out",
-          "port": "0-65535"
+        {"outboundTag": "block-out",
+         "port": "0-65535"
         }
       ]
     }
