@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-dynx-v18",
+  "remarks": "Serverless-dynx-v19",
 
   "version": {
     "min": "25.10.15"
@@ -126,6 +126,23 @@
       "tag": "dns-out",
       "protocol": "dns",
       "settings": {"nonIPQuery": "reject", "blockTypes": [0, 65]}
+    },
+	{
+      "tag": "tls-fragment",
+      "protocol": "direct",
+      "settings": {
+        "fragment": {
+          "packets": "tlshello",
+          "length": "6",
+          "interval": "0",
+          "maxSplit": "0"
+        }
+      },
+      "streamSettings": {
+        "sockopt": {
+          "dialerProxy": "full-fragment"
+        }
+      }
     },
     {
       "tag": "skip-fragment",
