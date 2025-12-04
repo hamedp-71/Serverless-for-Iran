@@ -8,7 +8,7 @@
     },
 
 
-    "remarks": "Serverless-v22",
+    "remarks": "Serverless-v23",
 
     "version": {
       "min": "25.10.15"
@@ -265,7 +265,7 @@
          "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "udp-noises",
-         "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "port": "443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
          "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
@@ -294,7 +294,7 @@
     },
 
 
-    "remarks": "Serverless-local-v22",
+    "remarks": "Serverless-local-v23",
 
     "version": {
       "min": "25.10.15"
@@ -562,7 +562,7 @@
          "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "udp-noises",
-         "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "port": "443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
          "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
@@ -591,7 +591,7 @@
     },
 
 
-    "remarks": "Serverless-dynx-v22",
+    "remarks": "Serverless-dynx-v23",
 
     "version": {
       "min": "25.10.15"
@@ -860,7 +860,7 @@
          "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "udp-noises",
-         "network": "udp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "udp", "port": "443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "direct-out",
          "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
