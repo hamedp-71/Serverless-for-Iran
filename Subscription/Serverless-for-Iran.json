@@ -8,7 +8,7 @@
     },
 
 
-    "remarks": "Serverless-v21",
+    "remarks": "Serverless-v22",
 
     "version": {
       "min": "25.10.15"
@@ -274,13 +274,7 @@
          "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-         "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
-        },
-        {"outboundTag": "full-fragment",
-         "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
-        },
-        {"outboundTag": "full-fragment",
-         "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
          "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
@@ -300,7 +294,7 @@
     },
 
 
-    "remarks": "Serverless-local-v21",
+    "remarks": "Serverless-local-v22",
 
     "version": {
       "min": "25.10.15"
@@ -577,13 +571,7 @@
          "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-         "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
-        },
-        {"outboundTag": "full-fragment",
-         "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
-        },
-        {"outboundTag": "full-fragment",
-         "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
          "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
@@ -603,7 +591,7 @@
     },
 
 
-    "remarks": "Serverless-dynx-v21",
+    "remarks": "Serverless-dynx-v22",
 
     "version": {
       "min": "25.10.15"
@@ -881,13 +869,7 @@
          "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
-         "network": "tcp", "port": "443,2053,2083,2087,2096,8443", "ip": ["0.0.0.0/0", "::/0"]
-        },
-        {"outboundTag": "full-fragment",
-         "network": "tcp", "protocol": ["http"], "ip": ["0.0.0.0/0", "::/0"]
-        },
-        {"outboundTag": "full-fragment",
-         "network": "tcp", "port": "80,8080,8880,2052,2082,2086,2095", "ip": ["0.0.0.0/0", "::/0"]
+         "network": "tcp", "port": "443", "ip": ["0.0.0.0/0", "::/0"]
         },
         {"outboundTag": "full-fragment",
          "network": "tcp", "ip": ["0.0.0.0/0", "::/0"]
