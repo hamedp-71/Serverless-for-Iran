@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-v24",
+  "remarks": "Serverless-v25",
 
   "version": {
     "min": "25.10.15"
@@ -55,7 +55,7 @@
   "inbounds": [
     {
       "tag": "dns-in",
-      "listen": "127.0.0.1",
+      // "listen": "127.0.0.1",
       "port": 10853,
       "protocol": "tunnel",
       "settings": {
@@ -72,7 +72,7 @@
     },
     {
       "tag": "socks-in",
-      "listen": "127.0.0.1",
+      // "listen": "127.0.0.1",
       "port": 10808,
       "protocol": "mixed",
       "sniffing": {
