@@ -27,8 +27,8 @@
   "inbounds": [
     {
       "tag": "dns-forwarder",
-      "listen": "127.0.0.1",
-      "port": 10853,
+      // "listen": "127.0.0.1",
+      "port": 10853, // or 53
       "protocol": "tunnel",
       "settings": {
         "address": "", // remote dns-in address
@@ -44,7 +44,7 @@
     },
 	{
       "tag": "socks-forwarder",
-      "listen": "127.0.0.1",
+      // "listen": "127.0.0.1",
       "port": 10808,
       "protocol": "tunnel",
       "settings": {
