@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-local-v26",
+  "remarks": "Serverless-local-v27",
 
   "version": {
     "min": "25.10.15"
@@ -274,7 +274,7 @@
        "inboundTag": ["no-filter-dns"]
       },
       {"outboundTag": "block-out",
-       "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.18.0.0/15", "fc00::/18"]
+       "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.19.0.0/16", "fc80::/9"]
       },
       {"outboundTag": "direct-out",
        "domain": ["domain:ir", "geosite:private", "geosite:ir"], "ip": ["0.0.0.0/0", "::/0"]
