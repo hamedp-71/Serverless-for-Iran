@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-v29",
+  "remarks": "Serverless-v30",
 
   "version": {
     "min": "25.10.15"
@@ -289,7 +289,7 @@
       {"outboundTag": "udp-noises",
        "network": "udp", "port": "443", "ip": ["0.0.0.0/0", "::/0"]
       },
-      {"outboundTag": "direct-out",
+      {"outboundTag": "udp-direct-out",
        "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
       },
       {"outboundTag": "full-fragment", // or "skip-fragment" or "tls-fragment"

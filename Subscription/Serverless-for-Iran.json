@@ -5,7 +5,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-v29",
+        "remarks": "Serverless-v30",
         "version": {
             "min": "25.10.15"
         },
@@ -628,7 +628,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "direct-out",
+                    "outboundTag": "udp-direct-out",
                     "network": "udp",
                     "ip": [
                         "0.0.0.0/0",
@@ -676,7 +676,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-local-v29",
+        "remarks": "Serverless-local-v30",
         "version": {
             "min": "25.10.15"
         },
@@ -1346,7 +1346,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "direct-out",
+                    "outboundTag": "udp-direct-out",
                     "network": "udp",
                     "ip": [
                         "0.0.0.0/0",
@@ -1394,7 +1394,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-dynx-v29",
+        "remarks": "Serverless-dynx-v30",
         "version": {
             "min": "25.10.15"
         },
@@ -2070,7 +2070,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "direct-out",
+                    "outboundTag": "udp-direct-out",
                     "network": "udp",
                     "ip": [
                         "0.0.0.0/0",
