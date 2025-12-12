@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-dynx-v30",
+  "remarks": "Serverless-dynx-v31",
 
   "version": {
     "min": "25.10.15"
@@ -168,7 +168,7 @@
         "fragment": {
           "packets": "1-1",
           "length": "130",
-          "interval": "130",
+          "interval": "260",
           "maxSplit": "4"
         }
       },
@@ -185,7 +185,7 @@
         "fragment": {
           "packets": "2-4",
           "length": "1",
-          "interval": "1",
+          "interval": "2",
           "maxSplit": "130"
         }
       },
@@ -208,7 +208,7 @@
         "fragment": {
           "packets": "1-1",
           "length": "1",
-          "interval": "1",
+          "interval": "2",
           "maxSplit": "517"
         }
       },
