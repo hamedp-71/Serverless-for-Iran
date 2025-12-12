@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-local-v28",
+  "remarks": "Serverless-local-v29",
 
   "version": {
     "min": "25.10.15"
@@ -167,7 +167,7 @@
         "fragment": {
           "packets": "1-1",
           "length": "130",
-          "interval": "560",
+          "interval": "130",
           "maxSplit": "4"
         }
       },
@@ -184,7 +184,7 @@
         "fragment": {
           "packets": "2-4",
           "length": "1",
-          "interval": "4",
+          "interval": "1",
           "maxSplit": "130"
         }
       },
@@ -207,7 +207,7 @@
         "fragment": {
           "packets": "1-1",
           "length": "1",
-          "interval": "4",
+          "interval": "1",
           "maxSplit": "517"
         }
       },
