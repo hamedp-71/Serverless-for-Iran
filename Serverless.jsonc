@@ -6,10 +6,10 @@
   },
 
 
-  "remarks": "Serverless-v31",
+  "remarks": "Serverless-v32",
 
   "version": {
-    "min": "25.10.15"
+    "min": "25.12.8"
   },
 
   "log": {
@@ -59,7 +59,9 @@
       }
     ],
     "queryStrategy": "UseSystem",
-    "useSystemHosts": true
+    "useSystemHosts": true,
+	"serveStale": true,
+    "serveExpiredTTL": 21600
   },
 
   "inbounds": [
@@ -115,7 +117,7 @@
         "sockopt": {
           "domainStrategy": "ForceIP",
           "happyEyeballs": {
-            "tryDelayMs": 100,
+            "tryDelayMs": 300,
             "prioritizeIPv6": true,
             "interleave": 2,
             "maxConcurrentTry": 16

@@ -5,9 +5,9 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-v31",
+        "remarks": "Serverless-v32",
         "version": {
-            "min": "25.10.15"
+            "min": "25.12.8"
         },
         "log": {
             "loglevel": "warning",
@@ -65,7 +65,9 @@
                 }
             ],
             "queryStrategy": "UseSystem",
-            "useSystemHosts": true
+            "useSystemHosts": true,
+            "serveStale": true,
+            "serveExpiredTTL": 21600
         },
         "inbounds": [
             {
@@ -119,7 +121,7 @@
                     "sockopt": {
                         "domainStrategy": "ForceIP",
                         "happyEyeballs": {
-                            "tryDelayMs": 100,
+                            "tryDelayMs": 300,
                             "prioritizeIPv6": true,
                             "interleave": 2,
                             "maxConcurrentTry": 16
@@ -676,9 +678,9 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-local-v31",
+        "remarks": "Serverless-local-v32",
         "version": {
-            "min": "25.10.15"
+            "min": "25.12.8"
         },
         "log": {
             "loglevel": "warning",
@@ -769,7 +771,9 @@
                 }
             ],
             "queryStrategy": "UseSystem",
-            "useSystemHosts": true
+            "useSystemHosts": true,
+            "serveStale": true,
+            "serveExpiredTTL": 21600
         },
         "inbounds": [
             {
@@ -823,7 +827,7 @@
                     "sockopt": {
                         "domainStrategy": "ForceIP",
                         "happyEyeballs": {
-                            "tryDelayMs": 100,
+                            "tryDelayMs": 300,
                             "prioritizeIPv6": true,
                             "interleave": 2,
                             "maxConcurrentTry": 16
@@ -1394,9 +1398,9 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-dynx-v31",
+        "remarks": "Serverless-dynx-v32",
         "version": {
-            "min": "25.10.15"
+            "min": "25.12.8"
         },
         "log": {
             "loglevel": "warning",
@@ -1493,7 +1497,9 @@
                 }
             ],
             "queryStrategy": "UseSystem",
-            "useSystemHosts": true
+            "useSystemHosts": true,
+            "serveStale": true,
+            "serveExpiredTTL": 21600
         },
         "inbounds": [
             {
@@ -1547,7 +1553,7 @@
                     "sockopt": {
                         "domainStrategy": "ForceIP",
                         "happyEyeballs": {
-                            "tryDelayMs": 100,
+                            "tryDelayMs": 300,
                             "prioritizeIPv6": true,
                             "interleave": 2,
                             "maxConcurrentTry": 16
