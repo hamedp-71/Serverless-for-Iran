@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-v34",
+  "remarks": "Serverless-vanilla-v34",
 
   "version": {
     "min": "25.12.8"
@@ -44,11 +44,19 @@
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:category-ir", "full:challenges.cloudflare.com"]
+        "domains": ["domain:ir", "geosite:private", "geosite:category-ir", "full:challenges.cloudflare.com", "geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
+      },
+	  {
+        "tag": "anti-sanction-dns",
+        "address": "tcp://dns.vanillapp.ir:853",
+        "expectedIPs": ["85.133.201.71"],
+        "timeoutMs": 5000,
+        "finalQuery": false
       },
       {
         "tag": "no-filter-dns",
         "address": "https://cloudflare-dns.com/dns-query",
+        "domains": ["geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"],
         "timeoutMs": 10000,
         "finalQuery": true
       },
@@ -132,6 +140,19 @@
         "targetStrategy": "ForceIPv6v4"
 	  }
 	},
+	{
+      "tag": "onlyv4-direct-out",
+      "protocol": "direct",
+      "streamSettings": {
+        "sockopt": {
+          "domainStrategy": "ForceIPv4",
+          "happyEyeballs": {
+            "tryDelayMs": 300,
+            "maxConcurrentTry": 20
+          }
+        }
+      }
+    },
     {
       "tag": "dns-out",
       "protocol": "dns",
@@ -249,6 +270,26 @@
           {"type": "rand", "packet": "1230", "delay": "10", "applyTo": "ipv6"}, {"type": "rand", "packet": "1230", "delay": "10", "applyTo": "ipv6"}
         ]
       }
+    },
+	{
+      "tag": "tls-repack-dns",
+      "protocol": "direct",
+      "streamSettings": {
+		"security": "tls",
+		"tlsSettings": {
+          "serverName": "dns.vanillapp.ir",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "domainStrategy": "ForceIP",
+          "happyEyeballs": {
+            "tryDelayMs": 300,
+            "prioritizeIPv6": true,
+            "interleave": 2,
+            "maxConcurrentTry": 20
+          }
+        }
+      }
     }
   ],
 
@@ -267,6 +308,12 @@
       {"outboundTag": "dns-out",
        "inboundTag": ["socks-in"], "port": 53
       },
+      {"outboundTag": "tls-repack-dns",
+       "network": "tcp", "inboundTag": ["anti-sanction-dns"]
+      },
+	  {"outboundTag": "udp-direct-out",
+       "network": "udp", "inboundTag": ["anti-sanction-dns"]
+      },
       {"outboundTag": "full-fragment", // or "skip-fragment" or "tls-fragment"
        "inboundTag": ["no-filter-dns"]
       },
@@ -279,6 +326,9 @@
 	  {"outboundTag": "udp-direct-out",
        "network": "udp", "domain": ["domain:ir", "geosite:private", "geosite:category-ir"], "ip": ["0.0.0.0/0", "::/0"]
       },
+	  {"outboundTag": "onlyv4-direct-out", // ensure route to anti-sanction-dns servers
+	   "ip": ["85.133.201.71"]
+	  },
       {"outboundTag": "tcp-direct-out",
        "network": "tcp", "ip": ["geoip:private", "geoip:ir"]
       },

@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-local-v32",
+  "remarks": "Serverless-zeus-v34",
 
   "version": {
     "min": "25.12.8"
@@ -44,13 +44,13 @@
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com", "geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
+        "domains": ["domain:ir", "geosite:private", "geosite:category-ir", "full:challenges.cloudflare.com", "geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord"]
       },
 	  {
         "tag": "anti-sanction-dns",
-        "address": "localhost",
-        "unexpectedIPs": ["geoip:irgfw-all-injected-ips", "0.0.0.0", "::", "127.0.0.1", "::1"],
-        "timeoutMs": 4000,
+        "address": "tcp://free.zeusdns.ir:853",
+        "expectedIPs": ["92.246.136.140"],
+        "timeoutMs": 5000,
         "finalQuery": false
       },
       {
@@ -62,7 +62,7 @@
       },
       {
         "address": "localhost",
-        "domains": ["domain:ir", "geosite:private", "geosite:ir", "full:challenges.cloudflare.com"],
+        "domains": ["domain:ir", "geosite:private", "geosite:category-ir", "full:challenges.cloudflare.com"],
         "finalQuery": true
       }
     ],
@@ -128,7 +128,7 @@
             "tryDelayMs": 300,
             "prioritizeIPv6": true,
             "interleave": 2,
-            "maxConcurrentTry": 16
+            "maxConcurrentTry": 20
           }
         }
       }
@@ -140,6 +140,19 @@
         "targetStrategy": "ForceIPv6v4"
 	  }
 	},
+	{
+      "tag": "onlyv4-direct-out",
+      "protocol": "direct",
+      "streamSettings": {
+        "sockopt": {
+          "domainStrategy": "ForceIPv4",
+          "happyEyeballs": {
+            "tryDelayMs": 300,
+            "maxConcurrentTry": 20
+          }
+        }
+      }
+    },
     {
       "tag": "dns-out",
       "protocol": "dns",
@@ -197,7 +210,7 @@
             "tryDelayMs": 300,
             "prioritizeIPv6": true,
             "interleave": 2,
-            "maxConcurrentTry": 16
+            "maxConcurrentTry": 20
           }
         }
       }
@@ -220,7 +233,7 @@
             "tryDelayMs": 300,
             "prioritizeIPv6": true,
             "interleave": 2,
-            "maxConcurrentTry": 16
+            "maxConcurrentTry": 20
           }
         }
       }
@@ -257,6 +270,26 @@
           {"type": "rand", "packet": "1230", "delay": "10", "applyTo": "ipv6"}, {"type": "rand", "packet": "1230", "delay": "10", "applyTo": "ipv6"}
         ]
       }
+    },
+	{
+      "tag": "tls-repack-dns",
+      "protocol": "direct",
+      "streamSettings": {
+		"security": "tls",
+		"tlsSettings": {
+          "serverName": "free.zeusdns.ir",
+          "fingerprint": "chrome"
+        },
+        "sockopt": {
+          "domainStrategy": "ForceIP",
+          "happyEyeballs": {
+            "tryDelayMs": 300,
+            "prioritizeIPv6": true,
+            "interleave": 2,
+            "maxConcurrentTry": 20
+          }
+        }
+      }
     }
   ],
 
@@ -275,7 +308,7 @@
       {"outboundTag": "dns-out",
        "inboundTag": ["socks-in"], "port": 53
       },
-      {"outboundTag": "tcp-direct-out",
+      {"outboundTag": "tls-repack-dns",
        "network": "tcp", "inboundTag": ["anti-sanction-dns"]
       },
 	  {"outboundTag": "udp-direct-out",
@@ -285,14 +318,17 @@
        "inboundTag": ["no-filter-dns"]
       },
       {"outboundTag": "block-out",
-       "ip": ["geoip:irgfw-block-injected-ips", "0.0.0.0", "::", "198.19.0.0/16", "fc80::/9"]
+       "ip": ["10.10.34.0/24", "2001:4188:2:600::/64", "0.0.0.0", "::", "198.19.0.0/16", "fc80::/9"]
       },
       {"outboundTag": "tcp-direct-out",
-       "network": "tcp", "domain": ["domain:ir", "geosite:private", "geosite:ir"], "ip": ["0.0.0.0/0", "::/0"]
+       "network": "tcp", "domain": ["domain:ir", "geosite:private", "geosite:category-ir"], "ip": ["0.0.0.0/0", "::/0"]
       },
 	  {"outboundTag": "udp-direct-out",
-       "network": "udp", "domain": ["domain:ir", "geosite:private", "geosite:ir"], "ip": ["0.0.0.0/0", "::/0"]
+       "network": "udp", "domain": ["domain:ir", "geosite:private", "geosite:category-ir"], "ip": ["0.0.0.0/0", "::/0"]
       },
+	  {"outboundTag": "onlyv4-direct-out", // ensure route to anti-sanction-dns servers
+	   "ip": ["92.246.136.140"]
+	  },
       {"outboundTag": "tcp-direct-out",
        "network": "tcp", "ip": ["geoip:private", "geoip:ir"]
       },
