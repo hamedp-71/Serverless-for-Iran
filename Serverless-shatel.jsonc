@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-shatel-v36",
+  "remarks": "Serverless-shatel-v37",
 
   "version": {
     "min": "25.12.8"
@@ -92,7 +92,7 @@
       }
     },
     {
-      "tag": "socks-in",
+      "tag": "mixed-in",
       // "listen": "127.0.0.1",
       "port": 10808,
       "protocol": "mixed",
@@ -287,7 +287,7 @@
        "inboundTag": ["dns-in"]
       },
       {"outboundTag": "dns-out",
-       "inboundTag": ["socks-in"], "port": 53
+       "inboundTag": ["mixed-in"], "port": 53
       },
       {"outboundTag": "tcp-direct-out",
        "network": "tcp", "inboundTag": ["anti-sanction-dns"]

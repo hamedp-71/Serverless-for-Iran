@@ -5,7 +5,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-v36",
+        "remarks": "Serverless-v37",
         "version": {
             "min": "25.12.8"
         },
@@ -87,7 +87,7 @@
                 }
             },
             {
-                "tag": "socks-in",
+                "tag": "mixed-in",
                 "port": 10808,
                 "protocol": "mixed",
                 "sniffing": {
@@ -547,7 +547,7 @@
                 {
                     "outboundTag": "dns-out",
                     "inboundTag": [
-                        "socks-in"
+                        "mixed-in"
                     ],
                     "port": 53
                 },
@@ -679,7 +679,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-dynx-v36",
+        "remarks": "Serverless-dynx-v37",
         "version": {
             "min": "25.12.8"
         },
@@ -794,7 +794,7 @@
                 }
             },
             {
-                "tag": "socks-in",
+                "tag": "mixed-in",
                 "port": 10808,
                 "protocol": "mixed",
                 "sniffing": {
@@ -1287,7 +1287,7 @@
                 {
                     "outboundTag": "dns-out",
                     "inboundTag": [
-                        "socks-in"
+                        "mixed-in"
                     ],
                     "port": 53
                 },
@@ -1441,7 +1441,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-shatel-v36",
+        "remarks": "Serverless-shatel-v37",
         "version": {
             "min": "25.12.8"
         },
@@ -1556,7 +1556,7 @@
                 }
             },
             {
-                "tag": "socks-in",
+                "tag": "mixed-in",
                 "port": 10808,
                 "protocol": "mixed",
                 "sniffing": {
@@ -2029,7 +2029,7 @@
                 {
                     "outboundTag": "dns-out",
                     "inboundTag": [
-                        "socks-in"
+                        "mixed-in"
                     ],
                     "port": 53
                 },
@@ -2181,7 +2181,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-vanilla-v36",
+        "remarks": "Serverless-vanilla-v37",
         "version": {
             "min": "25.12.8"
         },
@@ -2292,7 +2292,7 @@
                 }
             },
             {
-                "tag": "socks-in",
+                "tag": "mixed-in",
                 "port": 10808,
                 "protocol": "mixed",
                 "sniffing": {
@@ -2785,7 +2785,7 @@
                 {
                     "outboundTag": "dns-out",
                     "inboundTag": [
-                        "socks-in"
+                        "mixed-in"
                     ],
                     "port": 53
                 },
@@ -2937,7 +2937,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-zeus-v36",
+        "remarks": "Serverless-zeus-v37",
         "version": {
             "min": "25.12.8"
         },
@@ -3048,7 +3048,7 @@
                 }
             },
             {
-                "tag": "socks-in",
+                "tag": "mixed-in",
                 "port": 10808,
                 "protocol": "mixed",
                 "sniffing": {
@@ -3541,7 +3541,7 @@
                 {
                     "outboundTag": "dns-out",
                     "inboundTag": [
-                        "socks-in"
+                        "mixed-in"
                     ],
                     "port": 53
                 },
