@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-shatel-v35",
+  "remarks": "Serverless-shatel-v36",
 
   "version": {
     "min": "25.12.8"
@@ -31,7 +31,7 @@
       "poolSize": 65535
     },
     {
-      "ipPool": "fc80::/9",
+      "ipPool": "fc00:2000::/19",
       "poolSize": 65535
     }
   ],
@@ -299,7 +299,7 @@
        "inboundTag": ["no-filter-dns"]
       },
       {"outboundTag": "block-out",
-       "ip": ["10.10.34.0/24", "2001:4188:2:600::/64", "0.0.0.0", "::", "198.19.0.0/16", "fc80::/9"]
+       "ip": ["10.10.34.0/24", "2001:4188:2:600::/64", "0.0.0.0", "::", "198.19.0.0/16", "fc00:2000::/19"]
       },
       {"outboundTag": "tcp-direct-out",
        "network": "tcp", "domain": ["domain:ir", "geosite:private", "geosite:category-ir"], "ip": ["0.0.0.0/0", "::/0"]

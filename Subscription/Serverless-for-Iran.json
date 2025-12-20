@@ -5,7 +5,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-v35",
+        "remarks": "Serverless-v36",
         "version": {
             "min": "25.12.8"
         },
@@ -28,7 +28,7 @@
                 "poolSize": 65535
             },
             {
-                "ipPool": "fc80::/9",
+                "ipPool": "fc00:2000::/19",
                 "poolSize": 65535
             }
         ],
@@ -565,7 +565,7 @@
                         "0.0.0.0",
                         "::",
                         "198.19.0.0/16",
-                        "fc80::/9"
+                        "fc00:2000::/19"
                     ]
                 },
                 {
@@ -679,7 +679,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-dynx-v35",
+        "remarks": "Serverless-dynx-v36",
         "version": {
             "min": "25.12.8"
         },
@@ -702,7 +702,7 @@
                 "poolSize": 65535
             },
             {
-                "ipPool": "fc80::/9",
+                "ipPool": "fc00:2000::/19",
                 "poolSize": 65535
             }
         ],
@@ -1319,7 +1319,7 @@
                         "0.0.0.0",
                         "::",
                         "198.19.0.0/16",
-                        "fc80::/9"
+                        "fc00:2000::/19"
                     ]
                 },
                 {
@@ -1441,7 +1441,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-shatel-v35",
+        "remarks": "Serverless-shatel-v36",
         "version": {
             "min": "25.12.8"
         },
@@ -1464,7 +1464,7 @@
                 "poolSize": 65535
             },
             {
-                "ipPool": "fc80::/9",
+                "ipPool": "fc00:2000::/19",
                 "poolSize": 65535
             }
         ],
@@ -2061,7 +2061,7 @@
                         "0.0.0.0",
                         "::",
                         "198.19.0.0/16",
-                        "fc80::/9"
+                        "fc00:2000::/19"
                     ]
                 },
                 {
@@ -2181,7 +2181,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-vanilla-v35",
+        "remarks": "Serverless-vanilla-v36",
         "version": {
             "min": "25.12.8"
         },
@@ -2204,7 +2204,7 @@
                 "poolSize": 65535
             },
             {
-                "ipPool": "fc80::/9",
+                "ipPool": "fc00:2000::/19",
                 "poolSize": 65535
             }
         ],
@@ -2817,7 +2817,7 @@
                         "0.0.0.0",
                         "::",
                         "198.19.0.0/16",
-                        "fc80::/9"
+                        "fc00:2000::/19"
                     ]
                 },
                 {
@@ -2937,7 +2937,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-zeus-v35",
+        "remarks": "Serverless-zeus-v36",
         "version": {
             "min": "25.12.8"
         },
@@ -2960,7 +2960,7 @@
                 "poolSize": 65535
             },
             {
-                "ipPool": "fc80::/9",
+                "ipPool": "fc00:2000::/19",
                 "poolSize": 65535
             }
         ],
@@ -3573,7 +3573,7 @@
                         "0.0.0.0",
                         "::",
                         "198.19.0.0/16",
-                        "fc80::/9"
+                        "fc00:2000::/19"
                     ]
                 },
                 {
