@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-v34",
+  "remarks": "Serverless-v35",
 
   "version": {
     "min": "25.12.8"
@@ -161,7 +161,7 @@
         "fragment": {
           "packets": "1-1",
           "length": "130",
-          "interval": "260",
+          "interval": "560",
           "maxSplit": "4"
         }
       },
@@ -178,7 +178,7 @@
         "fragment": {
           "packets": "2-4",
           "length": "1",
-          "interval": "2",
+          "interval": "4",
           "maxSplit": "130"
         }
       },
@@ -201,7 +201,7 @@
         "fragment": {
           "packets": "1-1",
           "length": "1",
-          "interval": "2",
+          "interval": "4",
           "maxSplit": "517"
         }
       },
