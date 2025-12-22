@@ -5,7 +5,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-v37",
+        "remarks": "Serverless-v38",
         "version": {
             "min": "25.12.8"
         },
@@ -679,7 +679,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-dynx-v37",
+        "remarks": "Serverless-dynx-v38",
         "version": {
             "min": "25.12.8"
         },
@@ -1245,7 +1245,7 @@
                 }
             },
             {
-                "tag": "tls-repack-dns",
+                "tag": "tls-repack-anti-sanction-dns",
                 "protocol": "direct",
                 "streamSettings": {
                     "security": "tls",
@@ -1292,7 +1292,7 @@
                     "port": 53
                 },
                 {
-                    "outboundTag": "tls-repack-dns",
+                    "outboundTag": "tls-repack-anti-sanction-dns",
                     "network": "tcp",
                     "inboundTag": [
                         "anti-sanction-dns"
@@ -1441,7 +1441,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-shatel-v37",
+        "remarks": "Serverless-shatel-v38",
         "version": {
             "min": "25.12.8"
         },
@@ -2181,7 +2181,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-vanilla-v37",
+        "remarks": "Serverless-vanilla-v38",
         "version": {
             "min": "25.12.8"
         },
@@ -2743,7 +2743,7 @@
                 }
             },
             {
-                "tag": "tls-repack-dns",
+                "tag": "tls-repack-anti-sanction-dns",
                 "protocol": "direct",
                 "streamSettings": {
                     "security": "tls",
@@ -2790,7 +2790,7 @@
                     "port": 53
                 },
                 {
-                    "outboundTag": "tls-repack-dns",
+                    "outboundTag": "tls-repack-anti-sanction-dns",
                     "network": "tcp",
                     "inboundTag": [
                         "anti-sanction-dns"
@@ -2937,7 +2937,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-zeus-v37",
+        "remarks": "Serverless-zeus-v38",
         "version": {
             "min": "25.12.8"
         },
@@ -3499,7 +3499,7 @@
                 }
             },
             {
-                "tag": "tls-repack-dns",
+                "tag": "tls-repack-anti-sanction-dns",
                 "protocol": "direct",
                 "streamSettings": {
                     "security": "tls",
@@ -3546,7 +3546,7 @@
                     "port": 53
                 },
                 {
-                    "outboundTag": "tls-repack-dns",
+                    "outboundTag": "tls-repack-anti-sanction-dns",
                     "network": "tcp",
                     "inboundTag": [
                         "anti-sanction-dns"

@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-dynx-v37",
+  "remarks": "Serverless-dynx-v38",
 
   "version": {
     "min": "25.12.8"
@@ -272,7 +272,7 @@
       }
     },
 	{
-      "tag": "tls-repack-dns",
+      "tag": "tls-repack-anti-sanction-dns",
       "protocol": "direct",
       "streamSettings": {
 		"security": "tls",
@@ -308,7 +308,7 @@
       {"outboundTag": "dns-out",
        "inboundTag": ["mixed-in"], "port": 53
       },
-      {"outboundTag": "tls-repack-dns",
+      {"outboundTag": "tls-repack-anti-sanction-dns",
        "network": "tcp", "inboundTag": ["anti-sanction-dns"]
       },
 	  {"outboundTag": "udp-direct-out",
