@@ -5,7 +5,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-v39",
+        "remarks": "Serverless-v40",
         "version": {
             "min": "25.12.8"
         },
@@ -44,36 +44,12 @@
                         "domain:ir",
                         "geosite:private",
                         "geosite:category-ir",
-                        "full:challenges.cloudflare.com",
-                        "geosite:category-porn",
-                        "geosite:telegram",
-                        "geosite:meta",
-                        "geosite:youtube",
-                        "geosite:twitter",
-                        "geosite:reddit",
-                        "geosite:twitch",
-                        "geosite:tiktok",
-                        "geosite:discord",
-                        "domain:workers.dev",
-                        "domain:pages.dev"
+                        "full:challenges.cloudflare.com"
                     ]
                 },
                 {
                     "tag": "no-filter-dns",
                     "address": "https://cloudflare-dns.com/dns-query",
-                    "domains": [
-                        "geosite:category-porn",
-                        "geosite:telegram",
-                        "geosite:meta",
-                        "geosite:youtube",
-                        "geosite:twitter",
-                        "geosite:reddit",
-                        "geosite:twitch",
-                        "geosite:tiktok",
-                        "geosite:discord",
-                        "domain:workers.dev",
-                        "domain:pages.dev"
-                    ],
                     "timeoutMs": 10000,
                     "finalQuery": true
                 },
@@ -703,7 +679,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-dynx-v39",
+        "remarks": "Serverless-dynx-v40",
         "version": {
             "min": "25.12.8"
         },
@@ -1469,7 +1445,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-shatel-v39",
+        "remarks": "Serverless-shatel-v40",
         "version": {
             "min": "25.12.8"
         },
@@ -2213,7 +2189,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-vanilla-v39",
+        "remarks": "Serverless-vanilla-v40",
         "version": {
             "min": "25.12.8"
         },
@@ -2973,7 +2949,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-zeus-v39",
+        "remarks": "Serverless-zeus-v40",
         "version": {
             "min": "25.12.8"
         },

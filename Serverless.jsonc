@@ -6,7 +6,7 @@
   },
 
 
-  "remarks": "Serverless-v39",
+  "remarks": "Serverless-v40",
 
   "version": {
     "min": "25.12.8"
@@ -44,12 +44,11 @@
     "servers": [
       {
         "address": "fakedns",
-        "domains": ["domain:ir", "geosite:private", "geosite:category-ir", "full:challenges.cloudflare.com", "geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord", "domain:workers.dev", "domain:pages.dev"]
+        "domains": ["domain:ir", "geosite:private", "geosite:category-ir", "full:challenges.cloudflare.com"]
       },
       {
         "tag": "no-filter-dns",
         "address": "https://cloudflare-dns.com/dns-query",
-		"domains": ["geosite:category-porn", "geosite:telegram", "geosite:meta", "geosite:youtube", "geosite:twitter", "geosite:reddit", "geosite:twitch", "geosite:tiktok", "geosite:discord", "domain:workers.dev", "domain:pages.dev"],
         "timeoutMs": 10000,
         "finalQuery": true
       },
