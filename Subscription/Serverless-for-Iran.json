@@ -5,7 +5,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-v38",
+        "remarks": "Serverless-v39",
         "version": {
             "min": "25.12.8"
         },
@@ -44,12 +44,36 @@
                         "domain:ir",
                         "geosite:private",
                         "geosite:category-ir",
-                        "full:challenges.cloudflare.com"
+                        "full:challenges.cloudflare.com",
+                        "geosite:category-porn",
+                        "geosite:telegram",
+                        "geosite:meta",
+                        "geosite:youtube",
+                        "geosite:twitter",
+                        "geosite:reddit",
+                        "geosite:twitch",
+                        "geosite:tiktok",
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
                     ]
                 },
                 {
                     "tag": "no-filter-dns",
                     "address": "https://cloudflare-dns.com/dns-query",
+                    "domains": [
+                        "geosite:category-porn",
+                        "geosite:telegram",
+                        "geosite:meta",
+                        "geosite:youtube",
+                        "geosite:twitter",
+                        "geosite:reddit",
+                        "geosite:twitch",
+                        "geosite:tiktok",
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
+                    ],
                     "timeoutMs": 10000,
                     "finalQuery": true
                 },
@@ -679,7 +703,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-dynx-v38",
+        "remarks": "Serverless-dynx-v39",
         "version": {
             "min": "25.12.8"
         },
@@ -728,7 +752,9 @@
                         "geosite:reddit",
                         "geosite:twitch",
                         "geosite:tiktok",
-                        "geosite:discord"
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
                     ]
                 },
                 {
@@ -754,7 +780,9 @@
                         "geosite:reddit",
                         "geosite:twitch",
                         "geosite:tiktok",
-                        "geosite:discord"
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
                     ],
                     "timeoutMs": 10000,
                     "finalQuery": true
@@ -1441,7 +1469,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-shatel-v38",
+        "remarks": "Serverless-shatel-v39",
         "version": {
             "min": "25.12.8"
         },
@@ -1493,7 +1521,9 @@
                         "geosite:reddit",
                         "geosite:twitch",
                         "geosite:tiktok",
-                        "geosite:discord"
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
                     ]
                 },
                 {
@@ -1517,7 +1547,9 @@
                         "geosite:reddit",
                         "geosite:twitch",
                         "geosite:tiktok",
-                        "geosite:discord"
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
                     ],
                     "timeoutMs": 10000,
                     "finalQuery": true
@@ -2181,7 +2213,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-vanilla-v38",
+        "remarks": "Serverless-vanilla-v39",
         "version": {
             "min": "25.12.8"
         },
@@ -2229,7 +2261,9 @@
                         "geosite:reddit",
                         "geosite:twitch",
                         "geosite:tiktok",
-                        "geosite:discord"
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
                     ]
                 },
                 {
@@ -2253,7 +2287,9 @@
                         "geosite:reddit",
                         "geosite:twitch",
                         "geosite:tiktok",
-                        "geosite:discord"
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
                     ],
                     "timeoutMs": 10000,
                     "finalQuery": true
@@ -2937,7 +2973,7 @@
             "telegram": "https://t.me/projectXhttp",
             "donate": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o"
         },
-        "remarks": "Serverless-zeus-v38",
+        "remarks": "Serverless-zeus-v39",
         "version": {
             "min": "25.12.8"
         },
@@ -2985,7 +3021,9 @@
                         "geosite:reddit",
                         "geosite:twitch",
                         "geosite:tiktok",
-                        "geosite:discord"
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
                     ]
                 },
                 {
@@ -3009,7 +3047,9 @@
                         "geosite:reddit",
                         "geosite:twitch",
                         "geosite:tiktok",
-                        "geosite:discord"
+                        "geosite:discord",
+                        "domain:workers.dev",
+                        "domain:pages.dev"
                     ],
                     "timeoutMs": 10000,
                     "finalQuery": true
