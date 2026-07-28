@@ -6,9 +6,9 @@
             "donate2": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o",
             "donate3": "TON (TON): UQAc-mZB3y7uxWHKiMmq0ORZEYgycWDWZ4V1k73HsXvTJx-i"
         },
-        "remarks": "Serverless-v44-low_delay",
+        "remarks": "Serverless-v45-low_delay",
         "version": {
-            "min": "26.6.1"
+            "min": "26.6.27"
         },
         "log": {
             "loglevel": "warning",
@@ -152,9 +152,13 @@
                                 "type": "fragment",
                                 "settings": {
                                     "packets": "1-1",
-                                    "length": "1",
-                                    "delay": "1",
-                                    "maxSplit": "163"
+                                    "lengths": [
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "419"
                                 }
                             }
                         ]
@@ -179,19 +183,28 @@
                             {
                                 "type": "fragment",
                                 "settings": {
-                                    "packets": "1-1",
-                                    "length": "1",
-                                    "delay": "1",
-                                    "maxSplit": "163"
+                                    "packets": "tlshello",
+                                    "lengths": [
+                                        "6",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "0"
+                                    ],
+                                    "maxSplit": "0"
                                 }
                             },
                             {
                                 "type": "fragment",
                                 "settings": {
-                                    "packets": "tlshello",
-                                    "length": "124",
-                                    "delay": "0",
-                                    "maxSplit": "0"
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "168"
                                 }
                             }
                         ]
@@ -329,7 +342,7 @@
             "domainStrategy": "IPOnDemand",
             "rules": [
                 {
-                    "outboundTag": "tcp-fragment",
+                    "outboundTag": "tcp-fragment-tls",
                     "inboundTag": [
                         "no-filter-dns"
                     ]
@@ -398,7 +411,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "udp-noises",
+                    "outboundTag": "block",
                     "network": "udp",
                     "protocol": [
                         "quic"
@@ -409,7 +422,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "udp-noises",
+                    "outboundTag": "block",
                     "network": "udp",
                     "port": "443",
                     "ip": [
@@ -426,7 +439,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "tcp-fragment",
+                    "outboundTag": "tcp-fragment-tls",
                     "network": "tcp",
                     "protocol": [
                         "tls"
@@ -437,7 +450,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "tcp-fragment",
+                    "outboundTag": "tcp-fragment-tls",
                     "network": "tcp",
                     "port": "443",
                     "ip": [
@@ -467,9 +480,9 @@
             "donate2": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o",
             "donate3": "TON (TON): UQAc-mZB3y7uxWHKiMmq0ORZEYgycWDWZ4V1k73HsXvTJx-i"
         },
-        "remarks": "Serverless-v44-high_delay",
+        "remarks": "Serverless-v45-high_delay",
         "version": {
-            "min": "26.6.1"
+            "min": "26.6.27"
         },
         "log": {
             "loglevel": "warning",
@@ -613,9 +626,43 @@
                                 "type": "fragment",
                                 "settings": {
                                     "packets": "1-1",
-                                    "length": "1",
-                                    "delay": "11",
-                                    "maxSplit": "163"
+                                    "lengths": [
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "700",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "700",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "700",
+                                        "1"
+                                    ],
+                                    "maxSplit": "419"
                                 }
                             }
                         ]
@@ -640,19 +687,58 @@
                             {
                                 "type": "fragment",
                                 "settings": {
-                                    "packets": "1-1",
-                                    "length": "1",
-                                    "delay": "11",
-                                    "maxSplit": "163"
+                                    "packets": "tlshello",
+                                    "lengths": [
+                                        "6",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "0"
+                                    ],
+                                    "maxSplit": "0"
                                 }
                             },
                             {
                                 "type": "fragment",
                                 "settings": {
-                                    "packets": "tlshello",
-                                    "length": "124",
-                                    "delay": "0",
-                                    "maxSplit": "0"
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "700",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "700",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "700",
+                                        "1"
+                                    ],
+                                    "maxSplit": "168"
                                 }
                             }
                         ]
@@ -790,7 +876,7 @@
             "domainStrategy": "IPOnDemand",
             "rules": [
                 {
-                    "outboundTag": "tcp-fragment",
+                    "outboundTag": "tcp-fragment-tls",
                     "inboundTag": [
                         "no-filter-dns"
                     ]
@@ -859,7 +945,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "udp-noises",
+                    "outboundTag": "block",
                     "network": "udp",
                     "protocol": [
                         "quic"
@@ -870,7 +956,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "udp-noises",
+                    "outboundTag": "block",
                     "network": "udp",
                     "port": "443",
                     "ip": [
@@ -887,7 +973,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "tcp-fragment",
+                    "outboundTag": "tcp-fragment-tls",
                     "network": "tcp",
                     "protocol": [
                         "tls"
@@ -898,7 +984,7 @@
                     ]
                 },
                 {
-                    "outboundTag": "tcp-fragment",
+                    "outboundTag": "tcp-fragment-tls",
                     "network": "tcp",
                     "port": "443",
                     "ip": [

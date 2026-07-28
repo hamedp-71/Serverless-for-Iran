@@ -7,10 +7,10 @@
   },
 
 
-  "remarks": "Serverless-v44-high_delay",
+  "remarks": "Serverless-v45-high_delay",
 
   "version": {
-    "min": "26.6.1"
+    "min": "26.6.27"
   },
 
   "log": {
@@ -115,7 +115,7 @@
       "streamSettings": {
         "finalmask": {
           "tcp": [
-            {"type": "fragment", "settings": {"packets": "1-1", "length": "1", "delay": "11", "maxSplit": "163"}}
+            {"type": "fragment", "settings": {"packets": "1-1", "lengths": ["1"], "delays": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "700", "1", "1", "1", "1", "1", "1", "1", "1", "1", "700", "1", "1", "1", "1", "1", "1", "1", "1", "1", "700", "1"], "maxSplit": "419"}}
           ]
         },
         "sockopt": {
@@ -130,8 +130,8 @@
       "streamSettings": {
         "finalmask": {
           "tcp": [
-            {"type": "fragment", "settings": {"packets": "1-1", "length": "1", "delay": "11", "maxSplit": "163"}},
-			{"type": "fragment", "settings": {"packets": "tlshello", "length": "124", "delay": "0", "maxSplit": "0"}}
+			{"type": "fragment", "settings": {"packets": "tlshello", "lengths": ["6", "1"], "delays": ["0"], "maxSplit": "0"}},
+            {"type": "fragment", "settings": {"packets": "1-1", "lengths": ["1"], "delays": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "700", "1", "1", "1", "1", "1", "1", "1", "1", "1", "700", "1", "1", "1", "1", "1", "1", "1", "1", "1", "700", "1"], "maxSplit": "168"}}
           ]
         },
         "sockopt": {
@@ -175,7 +175,7 @@
     "domainStrategy": "IPOnDemand",
     "rules": [
       {
-        "outboundTag": "tcp-fragment",
+        "outboundTag": "tcp-fragment-tls",
         "inboundTag": ["no-filter-dns"]
       },
       {
@@ -203,11 +203,11 @@
         "network": "udp", "ip": ["geoip:private", "geoip:ir"]
       },
       {
-        "outboundTag": "udp-noises",
+        "outboundTag": "block",
         "network": "udp", "protocol": ["quic"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {
-        "outboundTag": "udp-noises",
+        "outboundTag": "block",
         "network": "udp", "port": "443", "ip": ["0.0.0.0/0", "::/0"]
       },
       {
@@ -215,11 +215,11 @@
         "network": "udp", "ip": ["0.0.0.0/0", "::/0"]
       },
       {
-        "outboundTag": "tcp-fragment",
+        "outboundTag": "tcp-fragment-tls",
         "network": "tcp", "protocol": ["tls"], "ip": ["0.0.0.0/0", "::/0"]
       },
       {
-        "outboundTag": "tcp-fragment",
+        "outboundTag": "tcp-fragment-tls",
         "network": "tcp", "port": "443", "ip": ["0.0.0.0/0", "::/0"]
       },
       {
