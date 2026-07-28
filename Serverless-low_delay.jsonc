@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-v45-low_delay",
+  "remarks": "Serverless-v46-low_delay",
 
   "version": {
     "min": "26.6.27"
@@ -115,7 +115,7 @@
       "streamSettings": {
         "finalmask": {
           "tcp": [
-            {"type": "fragment", "settings": {"packets": "1-1", "lengths": ["1"], "delays": ["1"], "maxSplit": "419"}}
+            {"type": "fragment", "settings": {"packets": "1-1", "lengths": ["1"], "delays": ["1"], "maxSplit": "923"}}
           ]
         },
         "sockopt": {
@@ -131,7 +131,7 @@
         "finalmask": {
           "tcp": [
 			{"type": "fragment", "settings": {"packets": "tlshello", "lengths": ["6", "1"], "delays": ["0"], "maxSplit": "0"}},
-            {"type": "fragment", "settings": {"packets": "1-1", "lengths": ["1"], "delays": ["1"], "maxSplit": "168"}}
+            {"type": "fragment", "settings": {"packets": "1-1", "lengths": ["1"], "delays": ["1"], "maxSplit": "923"}}
           ]
         },
         "sockopt": {
