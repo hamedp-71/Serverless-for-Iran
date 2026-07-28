@@ -6,7 +6,7 @@
             "donate2": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o",
             "donate3": "TON (TON): UQAc-mZB3y7uxWHKiMmq0ORZEYgycWDWZ4V1k73HsXvTJx-i"
         },
-        "remarks": "Serverless-v47-low_delay",
+        "remarks": "Serverless-v48-low_delay",
         "version": {
             "min": "26.6.27"
         },
@@ -185,12 +185,27 @@
                                 "settings": {
                                     "packets": "tlshello",
                                     "lengths": [
-                                        "5"
+                                        "5",
+                                        "1"
                                     ],
                                     "delays": [
                                         "0"
                                     ],
-                                    "maxSplit": "2"
+                                    "maxSplit": "0"
+                                }
+                            },
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "43",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1"
+                                    ],
+                                    "maxSplit": "522"
                                 }
                             }
                         ]
@@ -466,7 +481,7 @@
             "donate2": "USDT (TRC20): TU5gKvKqcXPn8itp1DouBCwcqGHMemBm8o",
             "donate3": "TON (TON): UQAc-mZB3y7uxWHKiMmq0ORZEYgycWDWZ4V1k73HsXvTJx-i"
         },
-        "remarks": "Serverless-v47-high_delay",
+        "remarks": "Serverless-v48-high_delay",
         "version": {
             "min": "26.6.27"
         },
@@ -675,12 +690,57 @@
                                 "settings": {
                                     "packets": "tlshello",
                                     "lengths": [
-                                        "5"
+                                        "5",
+                                        "1"
                                     ],
                                     "delays": [
                                         "0"
                                     ],
-                                    "maxSplit": "2"
+                                    "maxSplit": "0"
+                                }
+                            },
+                            {
+                                "type": "fragment",
+                                "settings": {
+                                    "packets": "1-1",
+                                    "lengths": [
+                                        "43",
+                                        "1"
+                                    ],
+                                    "delays": [
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "400",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "400",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "1",
+                                        "400",
+                                        "1"
+                                    ],
+                                    "maxSplit": "522"
                                 }
                             }
                         ]
