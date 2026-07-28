@@ -7,7 +7,7 @@
   },
 
 
-  "remarks": "Serverless-v46-high_delay",
+  "remarks": "Serverless-v47-high_delay",
 
   "version": {
     "min": "26.6.27"
@@ -115,7 +115,7 @@
       "streamSettings": {
         "finalmask": {
           "tcp": [
-            {"type": "fragment", "settings": {"packets": "1-1", "lengths": ["1"], "delays": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "400", "1", "1", "1", "1", "1", "1", "1", "1", "1", "400", "1", "1", "1", "1", "1", "1", "1", "1", "1", "400", "1"], "maxSplit": "923"}}
+            {"type": "fragment", "settings": {"packets": "1-1", "lengths": ["1"], "delays": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "400", "1", "1", "1", "1", "1", "1", "1", "1", "1", "400", "1", "1", "1", "1", "1", "1", "1", "1", "1", "400", "1"], "maxSplit": "419"}}
           ]
         },
         "sockopt": {
@@ -130,8 +130,7 @@
       "streamSettings": {
         "finalmask": {
           "tcp": [
-			{"type": "fragment", "settings": {"packets": "tlshello", "lengths": ["6", "1"], "delays": ["0"], "maxSplit": "0"}},
-            {"type": "fragment", "settings": {"packets": "1-1", "lengths": ["1"], "delays": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "400", "1", "1", "1", "1", "1", "1", "1", "1", "1", "400", "1", "1", "1", "1", "1", "1", "1", "1", "1", "400", "1"], "maxSplit": "923"}}
+			{"type": "fragment", "settings": {"packets": "tlshello", "lengths": ["5"], "delays": ["0"], "maxSplit": "2"}}
           ]
         },
         "sockopt": {
